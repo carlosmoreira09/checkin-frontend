@@ -1,0 +1,25 @@
+.box-arena { 
+    background: linear-gradient(#121212, #212b46);
+    padding: 30px;
+    margin: 50px;
+    border-radius: 15px;
+    box-shadow: 1px 3px 8px rgba(145, 145, 145, 0.5);    
+}
+
+.title { 
+    text-align: center;
+    margin: 20px;
+    color: #d8d6d6;
+    font-size: 2rem;
+    animation: rotate 2s;
+}
+
+@keyframes rotate { 
+    from{ 
+        transform: rotateX(360deg);
+
+    }
+    to{ 
+        transform: rotateX(0deg);
+    }
+}

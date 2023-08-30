@@ -1,0 +1,6 @@
+<div class="card-body flex justify-content-center box-selectday">
+        <div *ngFor="let day of days" class="field-checkbox">
+            <p-checkbox name="group" [value]="day" [(ngModel)]="selectedDay" [inputId]="day.key"></p-checkbox>
+            <label [for]="day.key">{{ day.name }}</label>
+        </div>
+    </div>

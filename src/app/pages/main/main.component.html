@@ -1,0 +1,38 @@
+<div class="card flex abs box-arena">  
+<div class="title">
+    Check-in Point
+</div>
+<div class="card-body row p-md-5">
+
+    <div class="col-md-4"> 
+        <p-button (click)="showArena()" styleClass="p-button-raised p-button-text" icon="pi pi-external-link" label="Arena"></p-button>
+    </div>
+    
+    <div class="col-md-4"> 
+        <p-button (click)="showSelectDay()" styleClass="p-button-raised p-button-text" icon="pi pi-external-link" label="Dia"></p-button>
+    </div>
+    
+    <div class="col-md-4"> 
+        <p-button (click)="showPgto()" styleClass="p-button-raised p-button-text" icon="pi pi-external-link" label="Forma de Pagamento"></p-button>
+    </div>
+
+</div>
+
+    <p-dialog [header]="headerArena" [(visible)]="arenaVisible" [modal]="true" [style]="{ width: '800px' }" [draggable]="false" [resizable]="false">
+        <p-toast></p-toast>
+        <app-arenas></app-arenas>
+    </p-dialog>
+
+  
+    <p-dialog [header]="headerSelectDay" [(visible)]="selectDayVisible" [modal]="true" [style]="{ width: '800px' }" [draggable]="false" [resizable]="false">
+        <p-toast></p-toast>
+        <app-selectday></app-selectday>
+    </p-dialog>
+
+  
+    <p-dialog [header]="headerSelectPgto" [(visible)]="selectPgtoVisible" [modal]="true" [style]="{ width: '800px' }" [draggable]="false" [resizable]="false">
+        <p-toast></p-toast>
+        <app-formapgto></app-formapgto>
+    </p-dialog>
+
+</div>

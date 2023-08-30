@@ -1,0 +1,15 @@
+.box-selectday { 
+    background-color:#afafaffa;
+    padding: 30px;
+    margin: 50px;
+    border-radius: 15px;
+    box-shadow: 1px 3px 8px rgba(145, 145, 145, 0.5);
+    align-items: left;
+    justify-content: left;
+    
+}
+
+p-checkbox { 
+    padding: 5px;
+    margin-left: 4px;
+}

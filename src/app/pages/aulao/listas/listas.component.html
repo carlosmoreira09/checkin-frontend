@@ -1,0 +1,22 @@
+<div class="card flex justify-content-center mt-2">
+
+<form [formGroup]="form">
+<div class="p-inputtext-md mt-2">
+    <label for="nomecompleto">Nome Completo</label>
+    <input name="nomecompleto" type="text" pInputText formControlName="text"/>
+</div>
+
+<div class="mt-2">
+    <label for="data">Data do Aulão</label>
+    <p-calendar [showIcon]="true" name="diadoaulao" formControlName="date"></p-calendar>
+</div>
+
+<label for="formpgto">Forma de Pagamento</label>
+<div *ngFor="let day of days" class="field-checkbox" id="formpgto">
+    <p-checkbox name="group" [value]="day" [(ngModel)]="selectedDay" [inputId]="day.key"></p-checkbox>
+    <label [for]="day.key">{{ day.name }}</label>
+</div>
+
+<button type="submit">Salvar</button>
+</form>
+</div>

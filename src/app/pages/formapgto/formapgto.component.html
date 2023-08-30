@@ -1,0 +1,14 @@
+<div class="card-body flex justify-content-center box-arena">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="arenas">
+            <select id="arenas" formControlName="state">
+                <option *ngFor="let state of states" [ngValue]="state">
+                    {{ state.abbrev }}
+                </option>
+            </select>
+        </div>
+        <div>
+            <button class="btn-submit" type="submit">OK</button>
+        </div>
+    </form>
+</div>
